@@ -11,9 +11,9 @@ public class Gerente extends Funcionario{
        this.setorGerenciado = setorGerenciado;
     }
 
-    @Override
+   @Override
     public double calcularParticipacaoNosLucros(double lucro) {
-        return lucro * PERCENTUAL_CALCULO_PL;
+        return (lucro * PERCENTUAL_CALCULO_PL) + (0.005 * this.salario);
     }
 
     @Override

@@ -6,7 +6,7 @@ public abstract class Funcionario {
     private String nome;
     private String cpf;
 
-    public double salario;
+    protected double salario;
 
     public Funcionario(String nome, String cpf, double salario){
         this.nome = nome;

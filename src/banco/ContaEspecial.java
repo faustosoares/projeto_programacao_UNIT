@@ -22,6 +22,11 @@ public class ContaEspecial extends Conta{
     }
 
     @Override
+    public void depositar(double valor) {
+        this.saldoDisponivel += valor;
+    }
+
+    @Override
     public String toString() {
         return "ContaEspecial[" + super.toString() + ", limite = " +
                 this.limite + ", saldo disponivel = " + this.saldoDisponivel + "]";
